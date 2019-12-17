@@ -1,11 +1,12 @@
 new Vue({
 	el: '#app',
   data: {
-  	title: 'Have fun with it, it should not have to be so serious.'
+    link: 'https://www.google.com/'
   },
   methods: {
-  	changeTitle: function(event) {
-    	this.title = event.target.value;
+    sayHello: function() {
+      this.title = 'Go to Google'
+      return this.title
     }
   }
 });
